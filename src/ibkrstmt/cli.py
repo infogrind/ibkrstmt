@@ -5,8 +5,6 @@ the real work happens in ``_run(...)``, which takes plain arguments and
 returns an exit code, so tests call it without subprocesses.
 """
 
-from __future__ import annotations
-
 import argparse
 import shutil
 import subprocess
