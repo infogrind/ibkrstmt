@@ -1,7 +1,7 @@
 [project]
 name = "ibkrstmt"
-version = "0.1.0"
-description = "Move and rename Interactive Brokers activity statements from Downloads into an archive"
+version = "0.1.1"
+description = "Move Interactive Brokers activity statements from Downloads into an archive"
 readme = "README.md"
 license = "MIT"
 authors = [
