@@ -1,0 +1,32 @@
+[project]
+name = "ibkrstmt"
+version = "0.1.0"
+description = "Move and rename Interactive Brokers activity statements from Downloads into an archive directory."
+readme = "README.md"
+authors = [
+    { name = "Marius Kleiner", email = "kleiner@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ibkrstmt = "ibkrstmt.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
